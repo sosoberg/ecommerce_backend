@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { canTreatArrayAsAnd } = require('sequelize/types/lib/utils');
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
@@ -33,6 +32,7 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
+
 });
 
 router.delete('/:id', async (req, res) => {
